@@ -1,7 +1,6 @@
 package com.pluralsight;
 
 import java.io.*;
-import java.util.ArrayList;
 
 public class DealershipFileManager {
 
@@ -18,7 +17,7 @@ public class DealershipFileManager {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split("\\|");
-                if (parts.length < 8) continue; // skip invalid lines
+                if (parts.length < 8) continue;
 
                 Vehicle v = new Vehicle(
                         Integer.parseInt(parts[0]),
